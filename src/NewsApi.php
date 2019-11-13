@@ -156,6 +156,7 @@ class NewsApi
     {
         $this->addPayload(['country' => $country]);
         $this->country = $country;
+        return $this;
     }
 
     /** NewsApi::getCategory()*/
@@ -169,6 +170,7 @@ class NewsApi
     {
         $this->addPayload(['category' => $category]);
         $this->category = $category;
+        return $this;
     }
 
     /** NewsApi::getType()*/
@@ -181,6 +183,7 @@ class NewsApi
     public function setType($type)
     {
         $this->type = $type;
+        return $this;
     }
 
     /** NewsApi::getAvailbleCategories()*/
